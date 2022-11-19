@@ -24,8 +24,8 @@ public class Srv {
         return this.data.findById(id);
     }
 
-    public Optional<Dept> updateDep(int id){
-        return this.data.findById(id);
+    public Dept updateDep(Dept d){
+        return this.data.save(d);
     }
 
     public void rmDepById(int id){
